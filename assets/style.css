@@ -1,0 +1,191 @@
+
+
+* {
+    box-sizing: border-box;   
+    margin: 0;
+    padding: 0;
+    font-family: "Belleza", sans-serif;
+      font-family: "Belleza", sans-serif;
+      overflow-x: hidden;
+      
+}
+.busq{
+    position: relative;
+    left: 40px;
+    margin: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.section-img{
+    background-color: rgba(11, 10, 46, 1);
+}
+
+
+
+body {
+    background-color: rgba(20, 16, 32, 1);
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+/* cards */
+.main {
+    display: flex;
+    justify-content: center;
+   
+}
+.card:hover{
+    background-color: rgb(68, 57, 105);
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(231, 229, 229, 0.2)
+}
+.card {
+    margin: 50px;
+    background-color: rgba(44, 37, 68, 1);
+    color: aliceblue;
+    width: 200px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;;
+    text-align: center;
+     z-index: 2
+}
+
+.card>h1{
+    font-size: 25px;
+    padding-top: 10px;
+    background-color:rgba(44, 37, 68, 1));
+}
+
+.card>img {
+    
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100px;
+    height: px;
+}
+
+.btn{ 
+    font-size: 17px;
+    color: aliceblue;
+    background-color: rgba(20, 16, 32, 1);
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 80px;
+    transition: 0.5s background;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transition: 0.5s background;
+    background-color: rgb(38, 27, 68);
+}
+
+
+
+.main2 {
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+
+
+/* cabecario */
+header {
+    width: 100%;
+    background-color: rgba(11, 10, 46, 1);
+    border-bottom: 1px solid var(--color-black);
+    padding: 0.5rem 0; 
+}
+
+.containerhead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 72rem;
+    margin: 0 auto;
+    flex-direction: colmn;
+    
+}
+
+
+.containerhead img {
+    width: 150px; 
+    height: auto; 
+    background-color: ;
+}
+
+header nav {
+    display: flex;
+    gap: 1.5rem; 
+}
+
+nav a {
+    color: #f7f7f7;
+    font-size: 1.1rem; 
+    text-decoration: none;
+    background-color: rgba(11, 10, 46, 1);
+    padding: 0.5rem;
+}
+header nav a:nth-child(2n-1) {
+    text-align: right;
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Estilo para o campo de texto da barra de pesquisa */
+.search-bar input[type="text"] {
+    width: 300px;
+    padding: 12px 20px;
+    border-radius: 25px; /* Bordas arredondadas */
+    border: 1px solid rgba(66, 66, 66, 1);
+    outline: none;
+    font-size: 16px;
+    background-color: rgba(66, 66, 66, 1); /* Cor de fundo do input */
+    color: #e9e7e7; /* Cor do texto */
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.search-bar input[type="text"]::placeholder {
+    color: #888; /* Cor do placeholder */
+}
+
+/*btn de busca*/
+.search-bar button {
+    padding: 12px 25px;
+    border-radius: 25px; 
+    border: none;
+    background-color: #2C2544; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.search-bar button:hover {
+    background-color: #141020; /*cor mouse btn */
+}
+
+
+
+
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Navegação</title>
+    <style>
+        #content {
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+        }
+        .main2 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            width: 200px;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card h1, .card h2 {
+            font-size: 1.2em;
+            margin: 10px;
+        }
+        .card .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+        }
+        .card .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" onclick="showContent('livros')">Livros</a> |
+            <a href="#" onclick="showContent('poemas')">Poemas</a> |
+            <a href="#" onclick="showContent('frases')">Frases</a>
+        </nav>
+    </header>
+    <div id="content">
+        <!-- O conteúdo será carregado aqui -->
+    </div>
+
+    <script>
+        function showContent(contentType) {
+            let contentDiv = document.getElementById('content');
+
+            if (contentType === 'livros') {
+                contentDiv.innerHTML = '<h2>Livros</h2><p>Conteúdo sobre livros.</p>';
+            } else if (contentType === 'poemas') {
+                contentDiv.innerHTML = '<h2>Poemas</h2><p>Conteúdo sobre poemas.</p>';
+            } else if (contentType === 'frases') {
+                contentDiv.innerHTML = `
+                    <div class="main2">
+                        <div class="card card1">
+                            <img src="img/images.jfif" alt="imagem1">
+                            <h1>Código Limpo</h1>
+                            <button class="btn">LER</button>
+                            <a href="codigolimpo.html"><button class="btn">RESUMO</button></a>
+                        </div>
+
+                        <div class="card card2">
+                            <img src="img/poesia/download (1).jpg" alt="imagem2">
+                            <h2>Antologia Poética</h2>
+                            <a href=""><button class="btn">LER</button></a>
+                            <a href=""><button class="btn">RESUMO</button></a>
+                        </div>
+
+                        <div class="card card3">
+                            <img src="img/Livros frases/frasescurtas.jpg" alt="imagem3">
+                            <h2>Frases curtas</h2>
+                            <a href=""><button class="btn">LER</button></a>
+                            <a href="pages/paginaproduto.html"><button class="btn">RESUMO</button></a>
+                        </div>
+
+                        <div class="card card4">
+                            <img src="img/Livros frases/" alt="imagem3">
+                            <a href=""><button class="btn">LER</button></a>
+                            <a href=""><button class="btn">RESUMO</button></a>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>
