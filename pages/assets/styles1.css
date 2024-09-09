@@ -143,14 +143,6 @@ button:hover {
     margin-top: 10px;
 }
 
-a {
-    text-decoration: none; 
-  }
-  
-  a:visited {
-    color: white;
-  }
-
 
 /* celular */
 @media (max-width: 768px) {

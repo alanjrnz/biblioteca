@@ -45,6 +45,7 @@ body {
     transform: translateY(-10px);
     box-shadow: 0 12px 24px rgba(231, 229, 229, 0.2)
 }
+
 .card {
     margin: 50px;
     background-color: rgba(44, 37, 68, 1);
@@ -88,6 +89,28 @@ body {
     transition: 0.5s background;
     background-color: rgb(38, 27, 68);
 }
+
+.btn-resumo{ 
+    font-size: 17px;
+    color: aliceblue;
+    background-color: rgba(20, 16, 32, 1);
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 80px;
+    transition: 0.5s background;
+    cursor: pointer;
+}
+
+.btn-resumo:hover {
+    transition: 0.5s background;
+    background-color: rgb(38, 27, 68);
+}
+
+
+
+
+
 
 
 
@@ -149,22 +172,22 @@ header nav a:nth-child(2n-1) {
     margin-top: 20px;
 }
 
-/* Estilo para o campo de texto da barra de pesquisa */
+
 .search-bar input[type="text"] {
     width: 300px;
     padding: 12px 20px;
-    border-radius: 25px; /* Bordas arredondadas */
+    border-radius: 25px; 
     border: 1px solid rgba(66, 66, 66, 1);
     outline: none;
     font-size: 16px;
-    background-color: rgba(66, 66, 66, 1); /* Cor de fundo do input */
-    color: #e9e7e7; /* Cor do texto */
+    background-color: rgba(66, 66, 66, 1); 
+    color: #e9e7e7; 
     transition: background-color 0.3s ease-in-out;
 }
 
 
 .search-bar input[type="text"]::placeholder {
-    color: #888; /* Cor do placeholder */
+    color: #888; 
 }
 
 /*btn de busca*/
@@ -172,8 +195,8 @@ header nav a:nth-child(2n-1) {
     padding: 12px 25px;
     border-radius: 25px; 
     border: none;
-    background-color: #2C2544; /* Cor de fundo do botão */
-    color: white; /* Cor do texto do botão */
+    background-color: #2C2544; 
+    color: white; 
     font-size: 16px;
     margin-left: 10px;
     cursor: pointer;
@@ -186,6 +209,42 @@ header nav a:nth-child(2n-1) {
 }
 
 
+footer {
+    background-color: rgba(11, 10, 46, 1); 
+    color: #ffffff; 
+    text-align: center; 
+    padding: 10px 0; 
+    bottom: 0;
+    width: 100%; 
+    font-size: 0.9rem; 
+}
 
 
 
+@media (max-width: 768px) {
+    .main, .main2 {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .card {
+        margin: 20px;
+        width: 90%;
+    }
+
+    .containerhead {
+        flex-direction: column; 
+    }
+
+    .search-bar input[type="text"] {
+        width: 100%; 
+    }
+
+    header nav {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+
+   
+}

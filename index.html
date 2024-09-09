@@ -34,16 +34,18 @@ Developed by Alan Carneiro
         <div class="containerhead">
             <img src="img/logo.png" alt="logo">
             <nav>
-                <a href="">Inicio</a>
-                <a href="">Livros</a>
-                <a href="">Poemas</a>
-                <a href="">Frases</a>
+                <a href="../index.html" class="filter-btn" data-filter="all">Inicio</a>
+                <a href="#" class="filter-btn" data-filter="livro">Livros</a>
+                <a href="#" class="filter-btn" data-filter="poema">Poemas</a>
+                <a href="#" class="filter-btn" data-filter="frase">Frases</a>
             </nav>
             
         </div>
     </header>
 <section class="section-img">
     <img class="busq" src="img/imgpronta.png" alt="">
+
+
 </section>
 
 <div class="search-bar">
@@ -54,30 +56,30 @@ Developed by Alan Carneiro
     <!---------------------------1 Linha de Cards-------------------------------------> 
    <div class="card-search">
        <div class="main">
-        <div class="card card1">
+        <div class="card livro">
         <img title="" src="img/images.jfif" alt="imagem1">
         <h1>Código Limpo</h2>
         <a href="https://github.com/KAYOKG/BibliotecaDev/blob/main/LivrosDev/Arquitetura%20Limpa%20-%20O%20Guia%20do%20Artesão%20para%20Estrutura%20e%20Design%20de%20Software%20-%20Autor%20(Robert%20C.%20Martin).pdf"><button class="btn">LER</button></a>
-        <a href="paginaproduto.html"><button class="btn">RESUMO</button></a>
+        <button class="btn-resumo" data-book="codigolimpo">RESUMO</button>
         </div>
-        <div class="card card2">
+        <div class="card frase">
         <img src="img/Livros frases/500frases.jpg" alt="imagem2">
        
         <h2>500 Frases</h2>
         <a href=""><button class="btn">LER</button></a>
-        <a href=""><button class="btn">RESUMO</button></a>
+        <button class="btn-resumo" data-book="500frases">RESUMO</button>
         </div>
-        <div class="card card3">
+        <div class="card livro">
         <img src="img/tech/linux.png" alt="imagem3">
         <h1>Guia Linux</h2>
         <a href=""><button class="btn">LER</button></a>
-        <a href=""><button class="btn">RESUMO</button></a>
+        <button class="btn-resumo" data-book="guialinux">RESUMO</button>
         </div>
-        <div class="card card4">
+        <div class="card livro">
             <img src="img/tech/prgpra.jpg" alt="imagem3">
             <h2 title="Programador Prágmatico">Programador.. </h2><br>
             <a href=""><button class="btn">LER</button></a>
-            <a href=""><button class="btn">RESUMO</button></a>
+            <button class="btn-resumo" data-book="programadorprag">RESUMO</button>
             </div>
        
        
@@ -85,28 +87,28 @@ Developed by Alan Carneiro
         <!--------------------------------2 Linha de Cards------------------------->
        <div class="main2">
         <div class="card card1">
-        <img src="img/images.jfif" alt="imagem4">
-        <h2>Código Limpo</h1>
+        <img src="img/Livros frases/frasespod.jpg" alt="imagem4">
+        <h2>Frases poderesas</h1>
         <button class="btn">LER</button></a>
-        <a href="codigolimpo.html"><button class="btn">RESUMO</button></a>
+        <button class="btn-resumo" data-book="frasespodereosas">RESUMO</button>
         </div>
-        <div class="card card2">
+        <div class="card frase">
         <img src="img/Livros frases/afrasenabocado.jpg" alt="imagem2">
         <h2 title="A frase na boca do povo">A frase na b.. </h2>
         <a href=""><button class="btn">LER</button></a>
-        <a href=""><button class="btn">RESUMO</button></a>
+        <button class="btn-resumo" data-book="afrase">RESUMO</button>
         </div>
-        <div class="card card3">
+        <div class="card poema">
         <img src="img/poesia/download (3).jpg" alt="imagem5">
         <h2  title="As coisas que você só ve quando desacelera">As coisas que..</h2>
         <a href=""><button class="btn">LER</button></a>
-        <a href=""><button class="btn">RESUMO</button></a>
+        <button class="btn-resumo" data-book="ascoisas">RESUMO</button>
         </div>
-        <div class="card card4">
+        <div class="card poema">
             <img src="img/poesia/amorpoesia.jpg" alt="imagem6">
             <h2 title="Nosso amor virou poesia">Nosso amor..</h2>
             <a href=""><button class="btn">LER</button></a>
-            <a href=""><button class="btn">RESUMO</button></a>
+            <button class="btn-resumo" data-book="amorpoesia">RESUMO</button>
             </div>
        
        </div> 
@@ -114,31 +116,34 @@ Developed by Alan Carneiro
        <!--------------------------------3 Linha de Cards-------------------------->
        <div class="main2">
         <div class="card card1">
-        <img src="img/images.jfif" alt="imagem7">
-        <h1>Código Limpo</h1>
+        <img src="img/poesia/download.jpg" alt="imagem7">
+        <h1>Todos Sentidos</h1>
         <button class="btn">LER</button></a>
-        <a href="codigolimpo.html"><button class="btn">RESUMO</button></a>
+        <button class="btn-resumo" data-book="todossentidos">RESUMO</button>
         </div>
-        <div class="card card2">
+        <div class="card poema">
         <img src="img/poesia/download (1).jpg" alt="imagem8">
         <h2>Antologia Poética</h2>
         <a href=""><button class="btn">LER</button></a>
-        <a href=""><button class="btn">RESUMO</button></a>
+        <button class="btn-resumo" data-book="antologia">RESUMO</button>
         </div>
-        <div class="card card3">
+        <div class="card frase">
         <img src="img/Livros frases/frasescurtas.jpg" alt="imagem9">
         <h2>Frases curtas</h2>
         <a href=""><button class="btn">LER</button></a>
-        <a href="pages/paginaproduto.html"><button class="btn">RESUMO</button></a>
+        <button class="btn-resumo" data-book="frasescurtas">RESUMO</button>
         </div>
-        <div class="card card4">
+        <div class="card livro">
             <img src="img/tech/comose.jpg" alt="imagem3">
             <h2 title="Como ser um programador melhor">Como ser um programador..</h2>
-            <a href=""><button class="btn">LER</button></a>
-            <a href=""><button class="btn">RESUMO</button></a>
+            <a href="https://github.com/KAYOKG/BibliotecaDev/blob/main/LivrosDev/Como%20ser%20um%20Programador%20Melhor%20-%20um%20Manual%20Para%20Programadores%20que%20se%20Importam%20com%20Código%20-%20Autor%20(Pete%20Goodliffe).pdf"><button class="btn">LER</button></a>
+            <button class="btn-resumo" data-book="comoserprogramador">RESUMO</button>
             </div>
        
        </div>
    </div>
+   <footer>
+    <p>&copy; 2024 Alan Carneiro. Todos os direitos reservados.</p>
+</footer>
 </body>
 </html>
