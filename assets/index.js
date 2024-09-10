@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.card');
     const searchInput = document.getElementById('searchInput');
 
-    // Filtragem de categorias
+    // filtra categorias
     filterButtons.forEach(button => {
         button.addEventListener('click', (event) => {
             event.preventDefault();
@@ -38,10 +38,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     resumoButtons.forEach(button => {
         button.addEventListener('click', function() {
-            // Obtém o nome do livro a partir do atributo data-book
+            
             const bookName = this.getAttribute('data-book');
 
-            // Redireciona para a página HTML correspondente dentro da pasta 'pages'
+            
             window.location.href = `pages/${bookName}.html`;
         });
     });
@@ -49,6 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     document.getElementById('voltarIndex').addEventListener('click', function() {
-        window.location.href = '../index.html'; // Caminho relativo para a página inicial
+        window.location.href = '../index.html'; 
     });
 
